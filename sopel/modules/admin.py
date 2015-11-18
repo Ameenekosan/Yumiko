@@ -1,15 +1,4 @@
-# coding=utf8
-"""
-admin.py - Sopel Admin Module
-Copyright 2010-2011, Sean B. Palmer (inamidst.com) and Michael Yanovich
-(yanovich.net)
-Copyright © 2012, Elad Alfassa, <elad@fedoraproject.org>
-Copyright 2013, Ari Koivula <ari@koivu.la>
 
-Licensed under the Eiffel Forum License 2.
-
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 from sopel.config.types import (

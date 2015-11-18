@@ -1,12 +1,4 @@
-# coding=utf8
-"""
-weather.py - Sopel Yahoo! Weather Module
-Copyright 2008, Sean B. Palmer, inamidst.com
-Copyright 2012, Edward Powell, embolalia.net
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 from sopel import web
@@ -146,7 +138,7 @@ def weather(bot, trigger):
     query = web.urlencode({'w': woeid, 'u': 'c'})
     url = 'http://weather.yahooapis.com/forecastrss?' + query
     parsed = feedparser.parse(url)
-    location = parsed['feed']['title']
+    location = parsed['feed']['title'].replace('Yahoo! Weather - ', '')
 
     cover = get_cover(parsed)
     temp = get_temp(parsed)

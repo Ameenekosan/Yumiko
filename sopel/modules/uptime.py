@@ -1,11 +1,4 @@
-# coding=utf8
-"""
-uptime.py - Uptime module
-Copyright 2014, Fabian Neundorf
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 from sopel.module import commands
@@ -23,5 +16,5 @@ def uptime(bot, trigger):
     delta = datetime.timedelta(seconds=round((datetime.datetime.utcnow() -
                                               bot.memory["uptime"])
                                              .total_seconds()))
-    bot.say("I've been sitting here for {} and I keep "
-            "going!".format(delta))
+    bot.say("I've been listening to your shit for {} and it doesn't seem to stop!"
+        .format(delta))

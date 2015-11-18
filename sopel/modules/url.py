@@ -1,14 +1,3 @@
-# coding=utf8
-"""
-url.py - Sopel URL title module
-Copyright 2010-2011, Michael Yanovich, yanovich.net, Kenneth Sham
-Copyright 2012-2013 Edward Powell
-Copyright 2013      Lior Ramati (firerogue517@gmail.com)
-Copyright © 2014 Elad Alfassa <elad@fedoraproject.org>
-Licensed under the Eiffel Forum License 2.
-
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 import re

@@ -1,11 +1,4 @@
-# coding=utf8
-"""
-remind.py - Sopel Reminder Module
-Copyright 2011, Sean B. Palmer, inamidst.com
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 import os

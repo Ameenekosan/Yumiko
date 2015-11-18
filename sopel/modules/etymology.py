@@ -1,11 +1,4 @@
-# coding=utf8
-"""
-etymology.py - Sopel Etymology Module
-Copyright 2007-9, Sean B. Palmer, inamidst.com
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 import re
@@ -92,6 +85,6 @@ def f_etymology(bot, trigger):
         bot.msg(trigger.sender, result)
     else:
         uri = etysearch % word
-        msg = 'Can\'t find the etymology for "%s". Try %s' % (word, uri)
+        msg = 'Can\'t find the etymology for "%s" :(' % word
         bot.msg(trigger.sender, msg)
         return NOLIMIT

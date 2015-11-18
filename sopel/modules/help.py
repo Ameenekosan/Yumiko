@@ -1,12 +1,4 @@
-# coding=utf8
-"""
-help.py - Sopel Help Module
-Copyright 2008, Sean B. Palmer, inamidst.com
-Copyright © 2013, Elad Alfassa, <elad@fedoraproject.org>
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 import textwrap
@@ -65,8 +57,7 @@ def help(bot, trigger):
 @priority('low')
 def help2(bot, trigger):
     response = (
-        'Hi, I\'m a bot. Say ".commands" to me in private for a list ' +
-        'of my commands, or see http://sopel.chat for more ' +
-        'general details. My owner is %s.'
+        'Hi, I\'m a bot. Say "&commands" to me in private for a list ' +
+        'of my commands. My owner is %s.'
     ) % bot.config.core.owner
     bot.reply(response)

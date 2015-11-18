@@ -1,11 +1,5 @@
 # coding=utf8
-"""
-wiktionary.py - Sopel Wiktionary Module
-Copyright 2009, Sean B. Palmer, inamidst.com
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 import re
@@ -76,7 +70,7 @@ def format(result, definitions, number=2):
     return result.strip(' .,')
 
 
-@commands('wt', 'define', 'dict')
+@commands('wt', 'define', 'dict', '\?')
 @example('.wt bailiwick')
 def wiktionary(bot, trigger):
     """Look up a word on Wiktionary."""

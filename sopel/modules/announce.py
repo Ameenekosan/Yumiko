@@ -1,10 +1,4 @@
-# coding=utf8
-"""
-announce.py - Send a message to all channels
-Copyright © 2013, Elad Alfassa, <elad@fedoraproject.org>
-Licensed under the Eiffel Forum License 2.
 
-"""
 from __future__ import unicode_literals
 
 from sopel.module import commands, example

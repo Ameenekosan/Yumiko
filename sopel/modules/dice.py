@@ -1,12 +1,4 @@
-# coding=utf8
-"""
-dice.py - Dice Module
-Copyright 2010-2013, Dimitri "Tyrope" Molenaars, TyRope.nl
-Copyright 2013, Ari Koivula, <ari@koivu.la>
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat/
-"""
 from __future__ import unicode_literals
 import random
 import re

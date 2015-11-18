@@ -1,9 +1,3 @@
-# coding=utf8
-"""GeoIP lookup module"""
-# Copyright 2011, Dimitri Molenaars, TyRope.nl,
-# Copyright © 2013, Elad Alfassa <elad@fedoraproject.org>
-# Licensed under the Eiffel Forum License 2.
-
 from __future__ import unicode_literals
 
 import pygeoip

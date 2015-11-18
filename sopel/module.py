@@ -1,20 +1,4 @@
-# coding=utf-8
-"""This module is meant to be imported from sopel modules.
-
-It defines the following decorators for defining sopel callables:
-sopel.module.rule
-sopel.module.thread
-sopel.module.commands
-sopel.module.nickname_commands
-sopel.module.priority
-sopel.module.event
-sopel.module.rate
-sopel.module.example
-"""
-#Copyright 2013, Ari Koivula, <ari@koivu.la>
-#Copyright © 2013, Elad Alfassa <elad@fedoraproject.org>
-#Copyright 2013, Lior Ramati <firerogue517@gmail.com>
-#Licensed under the Eiffel Forum License 2.
+# coding=utf8
 
 from __future__ import unicode_literals
 

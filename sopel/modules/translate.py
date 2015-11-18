@@ -1,12 +1,5 @@
 # coding=utf8
-"""
-translate.py - Sopel Translation Module
-Copyright 2008, Sean B. Palmer, inamidst.com
-Copyright © 2013-2014, Elad Alfassa <elad@fedoraproject.org>
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 from sopel import web
 from sopel.module import rule, commands, priority, example
@@ -81,7 +74,7 @@ def tr(bot, trigger):
             msg = msg.decode('utf-8')
         if msg:
             msg = web.decode(msg)  # msg.replace('&#39;', "'")
-            msg = '"%s" (%s to %s, translate.google.com)' % (msg, in_lang, out_lang)
+            msg = '"%s" (%s to %s)' % (msg, in_lang, out_lang)
         else:
             msg = 'The %s to %s translation failed, sorry!' % (in_lang, out_lang)
 
@@ -125,7 +118,7 @@ def tr2(bot, trigger):
             msg = msg.decode('utf-8')
         if msg:
             msg = web.decode(msg)  # msg.replace('&#39;', "'")
-            msg = '"%s" (%s to %s, translate.google.com)' % (msg, src, dest)
+            msg = '"%s" (%s to %s)' % (msg, src, dest)
         else:
             msg = 'The %s to %s translation failed, sorry!' % (src, dest)
 

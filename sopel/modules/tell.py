@@ -1,11 +1,4 @@
-# coding=utf8
-"""
-tell.py - Sopel Tell and Ask Module
-Copyright 2008, Sean B. Palmer, inamidst.com
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 import os

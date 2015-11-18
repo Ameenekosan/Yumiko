@@ -1,12 +1,4 @@
-# coding=utf8
-"""
-seen.py - Sopel Seen Module
-Copyright 2008, Sean B. Palmer, inamidst.com
-Copyright © 2012, Elad Alfassa <elad@fedoraproject.org>
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 import time

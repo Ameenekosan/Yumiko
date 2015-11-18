@@ -1,11 +1,4 @@
-# coding=utf8
-"""
-rand.py - Rand Module
-Copyright 2013, Ari Koivula, <ari@koivu.la>
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat
-"""
 from __future__ import unicode_literals
 
 from sopel.module import commands, example
@@ -35,7 +28,7 @@ def rand(bot, trigger):
             low = 0
             high = sys.maxsize
     except (ValueError, TypeError):
-        return bot.reply("Arguments must be of integer type")
+        return bot.reply("Please choose 2 numbers")
 
     if low > high:
         low, high = high, low

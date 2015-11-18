@@ -1,11 +1,4 @@
-# coding=utf8
-"""
-meetbot.py - Sopel meeting logger module
-Copyright © 2012, Elad Alfassa, <elad@fedoraproject.org>
-Licensed under the Eiffel Forum License 2.
 
-This module is an attempt to implement at least some of the functionallity of Debian's meetbot
-"""
 from __future__ import unicode_literals
 import time
 import os

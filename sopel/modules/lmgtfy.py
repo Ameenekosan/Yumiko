@@ -1,11 +1,4 @@
-# coding=utf8
-"""
-lmgtfy.py - Sopel Let me Google that for you module
-Copyright 2013, Dimitri Molenaars http://tyrope.nl/
-Licensed under the Eiffel Forum License 2.
 
-http://sopel.chat/
-"""
 from __future__ import unicode_literals
 from sopel.module import commands
 
@@ -17,3 +10,4 @@ def googleit(bot, trigger):
     if not trigger.group(2):
         return bot.say('http://google.com/')
     bot.say('http://lmgtfy.com/?q=' + trigger.group(2).replace(' ', '+'))
+    bot.say('Was that so hard?')
