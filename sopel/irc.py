@@ -1,17 +1,5 @@
 # coding=utf-8
-"""
-irc.py - An Utility IRC Bot
-Copyright 2008, Sean B. Palmer, inamidst.com
-Copyright 2012, Edward Powell, http://embolalia.net
-Copyright © 2012, Elad Alfassa <elad@fedoraproject.org>
 
-Licensed under the Eiffel Forum License 2.
-
-Sopel: http://sopel.chat/
-
-When working on core IRC protocol related features, consult protocol
-documentation at http://www.irchelp.org/irchelp/rfc/
-"""
 from __future__ import unicode_literals
 from __future__ import print_function
 from __future__ import absolute_import
@@ -431,14 +419,6 @@ class Bot(asynchat.async_chat):
                 # Loop detection
                 messages = [m[1] for m in self.stack[recipient_id][-8:]]
 
-                # If what we about to send repeated at least 5 times in the
-                # last 2 minutes, replace with '...'
-                if messages.count(text) >= 5 and elapsed < 120:
-                    text = '...'
-                    if messages.count('...') >= 3:
-                        # If we said '...' 3 times, discard message
-                        return
-
             self.write(('PRIVMSG', recipient), text)
             self.stack[recipient_id].append((time.time(), self.safe(text)))
             self.stack[recipient_id] = self.stack[recipient_id][-10:]
@@ -536,4 +516,3 @@ class Bot(asynchat.async_chat):
                 os._exit(1)
         self.last_error_timestamp = datetime.now()
         self.error_count = self.error_count + 1
-
