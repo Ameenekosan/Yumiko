@@ -21,6 +21,6 @@ def hacking(bot, trigger):
 with open("modules/data/8ball_responses.txt") as f:
     responses = [line.strip() for line in f.readlines() if not line.startswith("//")]
 def heightball(bot,trigger):
-    if trigger.goup(2):
-        bot.action(shakes the magic ball)
+    if trigger.group(2):
+        bot.action("shakes the magic ball")
         bot.say(random.choice(responses))
