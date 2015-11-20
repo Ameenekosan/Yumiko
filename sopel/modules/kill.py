@@ -5,6 +5,10 @@ from sopel.module import commands, rule, priority, example
 import random
 from random import randint
 import json
+from sopel.util import textgen, text
+
+with open("/home/ameenekosan/code/Yumiko/sopel/modules/data/kills.json") as f:
+    generator = get_generator(f.read(), variables)
 
 @commands("kill")
 def kill(bot, trigger):
@@ -22,9 +26,6 @@ def kill(bot, trigger):
     variables = {
         "user": target
     }
-
-    with open("modules/data/kills.json") as f:
-        generator = get_generator(f.read(), variables)
 
     # act out the message
     bot.action(generator.generate_string())
