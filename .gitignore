@@ -11,7 +11,6 @@ willie.egg-info/*
 *.db
 *.pyc
 *.pyo
-*.txt
 *~
 *.rpm
 *.spec
